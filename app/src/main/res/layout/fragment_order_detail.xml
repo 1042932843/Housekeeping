@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cqnu.com.housekeeping.Fragment.OrderDetailFragment"
+    android:orientation="vertical">
+    <include layout="@layout/universal_titlebar" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/order_head"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/head_tu" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/name" />
+                <include layout="@layout/line_v" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/sex" />
+                <include layout="@layout/line_v" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/age" />
+                <include layout="@layout/line_v" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/price" />
+                <include layout="@layout/line_v" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/address" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/des"
+            android:gravity="center"
+            android:textColor="@color/lightgrey"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2"
+            android:layout_margin="16dp"/>
+    </LinearLayout>
+    <include layout="@layout/line_h"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:text="时长" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <cqnu.com.housekeeping.Design.wheelView.WheelView
+            android:id="@+id/main_wv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:overScrollMode="never"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:text="0.0"
+            android:id="@+id/allprice"/>
+    </LinearLayout>
+    <include layout="@layout/line_h"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_bg"
+        android:layout_marginTop="20dp"
+        android:text="预 约"
+        android:textColor="@color/fab"
+        android:id="@+id/submit"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MenuItemView"><attr format="dimension" name="miv_diameter"/><attr format="color" name="miv_color"/><attr format="reference" name="miv_icon"/><attr format="string" name="miv_text"/><attr format="color" name="miv_textColor"/><attr format="dimension" name="miv_textSize"/></declare-styleable>
+    <declare-styleable name="SpringFloatingActionMenu"><attr format="color" name="sfam_colorPressed"/><attr format="color" name="sfam_colorNormal"/><attr format="color" name="sfam_colorRipple"/><attr format="color" name="sfam_colorDisabled"/><attr format="boolean" name="sfam_shadow"/><attr format="enum" name="sfam_size">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr><attr format="enum" name="sfam_position">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr><attr format="reference" name="sfam_icon"/><attr format="color" name="sfam_reveal_color"/></declare-styleable>
+    <string name="app_name">library</string>
+</resources>
